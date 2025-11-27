@@ -52,8 +52,8 @@ void loop() {
     TS_Point p = touch.getPoint();
 
     // Convert raw touch to screen coordinates
-    int x = map(p.x, 200, 3900, 0, tft.width());
-    int y = map(p.y, 200, 3800, 0, tft.height());
+    int x = map(p.x, 3912, 364, 0, tft.width());
+    int y = map(p.y, 3840, 227, 0, tft.height());
 
     Serial.printf("Touch → X: %d  |  Y: %d\n", x, y);
 
